@@ -1,0 +1,23 @@
+Determining if the function cbreak exists in the /home/kibaekjeong/anaconda2/lib/libncurses.so failed with the following output:
+Change Dir: /home/kibaekjeong/Desktop/CppND-System-Monitor-Project-Updated-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_02877/fast"
+make[1]: Entering directory '/home/kibaekjeong/Desktop/CppND-System-Monitor-Project-Updated-master/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_02877.dir/build.make CMakeFiles/cmTC_02877.dir/build
+make[2]: Entering directory '/home/kibaekjeong/Desktop/CppND-System-Monitor-Project-Updated-master/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02877.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=cbreak   -o CMakeFiles/cmTC_02877.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_02877
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02877.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cbreak    CMakeFiles/cmTC_02877.dir/CheckFunctionExists.c.o  -o cmTC_02877 -rdynamic /home/kibaekjeong/anaconda2/lib/libncurses.so -Wl,-rpath,/home/kibaekjeong/anaconda2/lib 
+CMakeFiles/cmTC_02877.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `cbreak'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_02877.dir/build.make:98: recipe for target 'cmTC_02877' failed
+make[2]: *** [cmTC_02877] Error 1
+make[2]: Leaving directory '/home/kibaekjeong/Desktop/CppND-System-Monitor-Project-Updated-master/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_02877/fast' failed
+make[1]: *** [cmTC_02877/fast] Error 2
+make[1]: Leaving directory '/home/kibaekjeong/Desktop/CppND-System-Monitor-Project-Updated-master/build/CMakeFiles/CMakeTmp'
+
+
